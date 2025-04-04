@@ -284,7 +284,7 @@ body.body-menu-active {
     margin-top: 7.5rem;
 }
 .card {
-    background-image: url("../images/mountain-80.png");
+    background-image: url("../mountain-80.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
