@@ -1,22 +1,37 @@
-<!doctype html>
-<html lang="en">
+---
+import Cards from '../components/Cards.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import MainBanner from '../components/MainBanner.astro';
+
+---
+<!DOCTYPE html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Ofrecemos servicios profesionales en Toledo de reparación, asesoría, creación de páginas web, marketing digital, SEO, gestión de redes sociales y desarrollo de software a medida. Mejora tu presencia online y optimiza tus negocios con soluciones personalizadas. ¡Contáctanos hoy para impulsar tu éxito!" />
+		<title>Proyecto Grupal DAM</title>
+		<link rel="icon" type="image/x-icon" href="" />
+		<link rel="stylesheet" type="text/css" href="../styles/main.css" />
+		<link
+			 rel="stylesheet"
+			 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			 href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			 rel="stylesheet"
+		/>
+  </head>
+<body>
+	<Header />
+	<MainBanner />
+  	<Cards />
+	<Footer />
+	<script src="../scripts/header.js"></script>
+   <script src="../scripts/menu.js"></script>
+   <script src="../scripts/typing.js"></script>
+</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
