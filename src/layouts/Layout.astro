@@ -29,11 +29,9 @@ import MainBanner from '../components/MainBanner.astro';
   </head>
 <body>
 	<Header />
-	<MainBanner />
-  	<Cards />
+		<main>
+			<slot />
+		</main>
 	<Footer />
-	<script src="../scripts/header.js"></script>
-   <script src="../scripts/menu.js"></script>
-   <script src="../scripts/typing.js"></script>
 </body>
 </html>
